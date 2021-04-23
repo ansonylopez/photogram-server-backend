@@ -10,7 +10,7 @@ const fileSystem = new FileSystem();
 
 
 //paginate post
-postRoutes.get('/', [verifyToken], async (request: any, response: Response) => {
+postRoutes.get('/', async (request: any, response: Response) => {
 
     let page = Number(request.query.page) || 1;
     let skip = page - 1;

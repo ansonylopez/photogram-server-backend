@@ -19,7 +19,7 @@ const file_system_1 = __importDefault(require("../class/file-system"));
 const postRoutes = express_1.Router();
 const fileSystem = new file_system_1.default();
 //paginate post
-postRoutes.get('/', [authentication_1.verifyToken], (request, response) => __awaiter(void 0, void 0, void 0, function* () {
+postRoutes.get('/', (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     let page = Number(request.query.page) || 1;
     let skip = page - 1;
     skip = skip * 10;
