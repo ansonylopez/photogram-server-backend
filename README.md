@@ -1,5 +1,5 @@
-# photogram-server-backend
-backend server in express.js for photogram app
+# photogram-server BackEnd
+Backend server in express.js for photogram app
 ## Instalation
 
 A little intro about the installation.
@@ -10,3 +10,13 @@ A little intro about the installation.
 * npm install
 * npm install -g nodemon
 
+## Usage
+```javascript
+nodemon dist
+
+```
+
+## Contributing
+Pull requests are welcome, For major changes, please open an issue first to discuss what you would like to change. 
+
+Any changes need to run command "tsc -w" to work with this proyect

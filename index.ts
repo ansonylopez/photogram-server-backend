@@ -11,14 +11,14 @@ import cors from 'cors';
 const server = new Server();
 
 //Body parser
-server.app.use( bodyParser.urlencoded({extended: true}) )
-server.app.use( bodyParser.json() )
+server.app.use(bodyParser.urlencoded({ extended: true }))
+server.app.use(bodyParser.json())
 
 //FileUpload
-server.app.use( fileUpload({ useTempFiles: true }) )
+server.app.use(fileUpload({ useTempFiles: true }))
 
 //cors config
-server.app.use( cors({ origin: true, credentials: true }) )
+server.app.use(cors({ origin: true, credentials: true }))
 
 //routes
 server.app.use('/user', userRoutes)
@@ -28,19 +28,18 @@ server.app.use('/posts', postRoutes)
 //connect DB
 mongoose.connect('mongodb://localhost:27017/photosgram', {
   useNewUrlParser: true, useCreateIndex: true
-}, ( err) => {
+}, (err) => {
 
   if (err) {
     throw err;
   }
 
-  console.log('Base de datos online');
-  
+  console.log('Data base online');
+
 
 })
 
 //init server
-server.start( () => {
-  console.log(`Servidor corriendo en puerto ${ server.port }`);
+server.start(() => {
+  console.log(`Server run in port: ${server.port}`);
 })
-  

@@ -28,9 +28,9 @@ mongoose_1.default.connect('mongodb://localhost:27017/photosgram', {
     if (err) {
         throw err;
     }
-    console.log('Base de datos online');
+    console.log('Data base online');
 });
 //init server
 server.start(() => {
-    console.log(`Servidor corriendo en puerto ${server.port}`);
+    console.log(`Server run in port: ${server.port}`);
 });
