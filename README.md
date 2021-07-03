@@ -12,7 +12,8 @@ A little intro about the installation.
 
 ## Usage
 ```javascript
-nodemon dist
+tsc 
+node dist/
 
 ```
 
