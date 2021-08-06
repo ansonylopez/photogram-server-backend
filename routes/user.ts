@@ -65,7 +65,7 @@ userRoutes.post('/create', (request: Request, response: Response) => {
             _id: userDB._id,
             name: userDB.name,
             email: userDB.email,
-            avatart: userDB.avatar
+            avatar: userDB.avatar
         });
 
         response.json({
@@ -109,7 +109,7 @@ userRoutes.post('/update', [verifyToken] ,(request: any, response: Response) => 
             _id: userDB._id, 
             name: userDB.name,
             email: userDB.email,
-            avatart: userDB.avatar
+            avatar: userDB.avatar
         })
 
         response.json({
